@@ -4,8 +4,7 @@
   "description": "template for external editors for the game bitburner",
   "main": "index.js",
   "scripts": {
-    "watch": "node ./build.mjs --watch",
-    "build": "node ./build.mjs"
+    "start": "node ./build.mjs"
   },
   "repository": {
     "type": "git",
