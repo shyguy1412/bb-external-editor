@@ -1,0 +1,23 @@
+{
+  "name": "bb-external-editor",
+  "version": "1.0.0",
+  "description": "template for external editors for the game bitburner",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node ./build.mjs --watch",
+    "build": "node ./build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NilsRamstoeck/bb-external-editor.git"
+  },
+  "author": "Nils Ramstöck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NilsRamstoeck/bb-external-editor/issues"
+  },
+  "homepage": "https://github.com/NilsRamstoeck/bb-external-editor#readme",
+  "dependencies": {
+    "esbuild": "^0.19.4"
+  }
+}
