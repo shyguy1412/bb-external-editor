@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/NilsRamstoeck/bb-external-editor#readme",
   "dependencies": {
-    "esbuild": "^0.19.4"
+    "esbuild": "^0.19.4",
+    "esbuild-bitburner-plugin": "file:../esbuild-bitburner-plugin",
+    "glob": "^10.3.10"
   }
 }

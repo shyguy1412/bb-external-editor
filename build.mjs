@@ -1,13 +1,14 @@
 import { context } from 'esbuild';
-import BitburnerPlugin from 'esbuild-bitburner-plugin';
-
+import { glob } from 'glob';
+import {BitburnerPlugin} from 'esbuild-bitburner-plugin';
 
 const WATCH = process.argv.includes('--watch');
 
 const ctx = await context({
   entryPoints: await glob('./servers/**/*.{js,jsx,ts,tsx}'),
   bundle: true,
-  plugins: [BitburnerPlugin],
+  plugins: [BitburnerPlugin()],
+  write: false,
   outbase: "./servers",
   minify: !WATCH,
   format: 'esm',
