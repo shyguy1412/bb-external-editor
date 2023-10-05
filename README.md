@@ -16,4 +16,13 @@ This is a template for using any external editor for Bitburner. This Template su
 Now any changes made to scripts inside the server folders will automatically be uploaded to Bitburner.
 To upload new scripts steps 5-7 will have to be repeated after their creation. (I plan on improving that)
 
+## Using React
+
+The React and ReactDOM instance from the game can simply be imported as ESModules
+
+```js
+import React from 'react' //and
+import ReactDOM from 'react-dom'
+```
+
 For more in-depth details have a look at the [plugin](https://github.com/NilsRamstoeck/esbuild-bitburner-plugin) powering this template!
