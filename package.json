@@ -20,7 +20,7 @@
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.10",
     "esbuild": "^0.19.4",
-    "esbuild-bitburner-plugin": "file:../esbuild-bitburner-plugin",
+    "esbuild-bitburner-plugin": "^1.0.0",
     "glob": "^10.3.10"
   }
 }
