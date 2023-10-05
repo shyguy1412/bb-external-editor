@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Netscript Type Definitions. These are pulled from the game
+NetscriptDefinitions.d.ts

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "baseUrl": "./",
+    "jsx": "react",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "NetscriptDefinitions" : ["NetscriptDefinitions.d.ts"]
+    }
+  },
+  "include": [
+    "servers/**/*.ts*"
+  ]
+}

@@ -8,11 +8,15 @@ const ctx = await context({
   outbase: "./servers",
   outdir: "./dist",
   plugins: [BitburnerPlugin({
-    port: 12525
+    port: 12525,
+    servers: ['home'],
+    types: 'NetscriptDefinitions.d.ts'
+    
   })],
   bundle: true,
   format: 'esm',
   platform: 'browser',
+  logLevel: 'info'
 });
 
 ctx.watch();
