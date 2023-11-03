@@ -4,7 +4,7 @@ This is a template for using any external editor for Bitburner. This Template su
 
 ## How to use
 
-1. If you dont already have it installed, install [NodeJS](https://nodejs.org)
+1. If you dont already have it installed, install [NodeJS](https://nodejs.org) v20 or newer
 1. Clone this repository
 1. navigate to the template (`cd path/to/the/template`) inside your console
 1. run `npm install` in your console to install all dependencies
@@ -24,4 +24,4 @@ import React from 'react' //and
 import ReactDOM from 'react-dom'
 ```
 
-For more in-depth details have a look at the [plugin](https://github.com/NilsRamstoeck/esbuild-bitburner-plugin) powering this template!
+For more in-depth details and features have a look at the [plugin](https://github.com/NilsRamstoeck/esbuild-bitburner-plugin) powering this template!
