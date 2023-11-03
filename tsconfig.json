@@ -10,6 +10,7 @@
       "dom",
       "dom.iterable"
     ],
+    "allowJs": true,
     "baseUrl": "./",
     "jsx": "react",
     "paths": {
@@ -20,6 +21,6 @@
     }
   },
   "include": [
-    "servers/**/*.ts*"
+    "servers/**/*", "global.d.ts", "mirror/**/*"
   ]
 }
