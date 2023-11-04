@@ -1,6 +1,6 @@
 # bb-external-editor
 
-This is a template for using any external editor for Bitburner. This Template supports JSX, TS and TSX out of the box.
+This is a template for using any external editor for Bitburner. This Template supports JS, JSX, TS and TSX out of the box.
 
 ## How to get started
 
