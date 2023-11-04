@@ -9,15 +9,15 @@ const createContext = async () => await context({
     'servers/**/*.tsx',
   ],
   outbase: "./servers",
-  outdir: "./dist",
+  outdir: "./build",
   plugins: [
     BitburnerPlugin({
       port: 12525,
       types: 'NetscriptDefinitions.d.ts',
-      // mirror: { //uncomment to enable file mirroring
-      //   'mirror/own': ['home'],
-      //   'mirror/other': ['n00dles']
-      // }
+      mirror: {
+      },
+      distribute: {
+      }
     })
   ],
   bundle: true,
