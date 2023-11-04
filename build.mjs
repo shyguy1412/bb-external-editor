@@ -9,7 +9,7 @@ const createContext = async () => await context({
     'servers/**/*.tsx',
   ],
   outbase: "./servers",
-  outdir: "./dist",
+  outdir: "./build",
   plugins: [
     BitburnerPlugin({
       port: 12525,
