@@ -14,7 +14,6 @@ This is a template for using any external editor for Bitburner. This Template su
 1. press connect
 
 Now any changes made to scripts inside the server folders will automatically be uploaded to Bitburner.
-To upload new scripts steps 5-7 will have to be repeated after their creation. (I plan on improving that)
 
 For more in-depth details have a look at the [plugin](https://github.com/NilsRamstoeck/esbuild-bitburner-plugin) powering this template!
 
