@@ -40,7 +40,7 @@ export MyComponent(){
 
 ### Developing on multiple servers
 
-Simply create a new folder with the name of the server you want in the 'servers' directory to develop on to start developing on that server!
+Simply create a new folder with the name of the server you want to develop on in the 'servers' directory to start developing on that server!
 
 ### Bidirectional Mirroring
 
