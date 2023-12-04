@@ -109,3 +109,52 @@ ctx.watch();
 ```
 
 In this example all files that are developed in 'servers/home/dist' will not only be uploaded to 'home' but also 'server-1', 'server-2' and 'server-3'.
+
+### Plugin Extensions
+
+You can provide plugin extensions with hooks that trigger before and after certain events. Within hooks that gurantee that the plugin is connected to the game, you also get full access to the remote file API. Using extensions would look something like this:
+
+```js
+import { context } from 'esbuild';
+import { BitburnerPlugin } from 'esbuild-bitburner-plugin';
+
+/** @type import('esbuild-bitburner-plugin').PluginExtension*/
+const customExtension = {
+  setup() { console.log('setup'); }, //Run once on plugin startup
+
+  beforeConnect() { console.log('beforeConnect'); }, //Run once before the game connects
+  afterConnect(remoteAPI) { console.log('afterConnect'); }, //Run every time after the game (re)connects
+
+  beforeBuild() { console.log('beforeBuild'); }, //Run before every build process
+  afterBuild(remoteAPI) { console.log('afterBuild'); }, //Run after build results have been uploaded into the game
+
+  beforeDistribute(remoteAPI) { console.log('beforeDistribute'); }, //Run before distribution begins
+  afterDistribute(remoteAPI) { console.log('afterDistribute'); }, //Run after files have been distributed
+};
+
+const createContext = async () => await context({
+  entryPoints: [
+    'servers/**/*.js',
+    'servers/**/*.jsx',
+    'servers/**/*.ts',
+    'servers/**/*.tsx',
+  ],
+  outbase: "./servers",
+  outdir: "./build",
+  plugins: [
+    BitburnerPlugin({
+      port: 12525,
+      types: 'NetscriptDefinitions.d.ts',
+      extensions: [customExtension]
+    })
+  ],
+  bundle: true,
+  format: 'esm',
+  platform: 'browser',
+  logLevel: 'info'
+});
+
+let ctx = await createContext();
+ctx.watch();
+
+```
