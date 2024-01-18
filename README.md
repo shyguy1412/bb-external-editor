@@ -30,7 +30,7 @@ This template allows you to use the ingame instances of `React` and `ReactDOM` s
 ```jsx
 import React, {useState} from 'react';
 
-export MyComponent(){
+export function MyComponent(){
   const [count, setCount] = useState(0);
 
   return <div>Count {count} <button onClick={() => setCount(count + 1)}>Add to count</button></div>;
