@@ -15,7 +15,7 @@ This is a template for using any external editor for Bitburner. This Template su
 
 Now any changes made to scripts inside the server folders will automatically be uploaded to Bitburner.
 
-For more in-depth details have a look at the [plugin](https://github.com/NilsRamstoeck/esbuild-bitburner-plugin) powering this template!
+For more in-depth details and a full list of options have a look at the [plugin](https://github.com/shyguy1412/esbuild-bitburner-plugin) powering this template!
 
 ## Features
 
@@ -127,9 +127,6 @@ const customExtension = {
 
   beforeBuild() { console.log('beforeBuild'); }, //Run before every build process
   afterBuild(remoteAPI) { console.log('afterBuild'); }, //Run after build results have been uploaded into the game
-
-  beforeDistribute(remoteAPI) { console.log('beforeDistribute'); }, //Run before distribution begins
-  afterDistribute(remoteAPI) { console.log('afterDistribute'); }, //Run after files have been distributed
 };
 
 const createContext = async () => await context({

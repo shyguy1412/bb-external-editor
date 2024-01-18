@@ -26,5 +26,5 @@ const createContext = async () => await context({
   logLevel: 'info'
 });
 
-let ctx = await createContext();
+const ctx = await createContext();
 ctx.watch();
