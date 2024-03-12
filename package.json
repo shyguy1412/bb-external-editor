@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/shyguy1412/bb-external-editor#readme",
   "dependencies": {
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "esbuild": "^0.19.11",
-    "esbuild-bitburner-plugin": "^1.4.0"
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.21",
+    "esbuild": "^0.19.12",
+    "esbuild-bitburner-plugin": "^1.5.0"
   }
 }
