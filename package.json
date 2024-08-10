@@ -1,6 +1,6 @@
 {
   "name": "bb-external-editor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "template for external editors for the game bitburner",
   "main": "index.js",
   "scripts": {
