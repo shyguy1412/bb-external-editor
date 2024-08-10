@@ -23,7 +23,10 @@ const createContext = async () => await context({
   bundle: true,
   format: 'esm',
   platform: 'browser',
-  logLevel: 'debug'
+  logLevel: 'debug',
+  sourcemap: 'inline',
+  sourceRoot: '/build/server',
+  sourcesContent: false
 });
 
 const ctx = await createContext();

@@ -136,3 +136,6 @@ NetscriptDefinitions.d.ts
 
 mirror/
 build/
+
+.vscode/*
+!.vscode/launch.json
