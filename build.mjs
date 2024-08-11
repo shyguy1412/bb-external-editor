@@ -17,16 +17,13 @@ const createContext = async () => await context({
       mirror: {
       },
       distribute: {
-      }
+      },
     })
   ],
   bundle: true,
   format: 'esm',
   platform: 'browser',
   logLevel: 'debug',
-  sourcemap: 'inline',
-  sourceRoot: '/build/server',
-  sourcesContent: false
 });
 
 const ctx = await createContext();

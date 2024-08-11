@@ -155,3 +155,46 @@ let ctx = await createContext();
 ctx.watch();
 
 ```
+
+## Remote Debugging
+
+This tool supports remote debugging for both the Steam version and the web version running in a Chrome/Chromium browser.
+
+```js
+const createContext = async () => await context({
+  entryPoints: [
+    'servers/**/*.js',
+    'servers/**/*.jsx',
+    'servers/**/*.ts',
+    'servers/**/*.tsx',
+  ],
+  outbase: "./servers",
+  outdir: "./build",
+  plugins: [
+    BitburnerPlugin({
+      port: 12525,
+      types: 'NetscriptDefinitions.d.ts',
+      remoteDebugging: true
+    })
+  ],
+  bundle: true,
+  format: 'esm',
+  platform: 'browser',
+  logLevel: 'info'
+});
+
+const ctx = await createContext();
+ctx.watch();
+```
+
+### Steam
+
+To enable remote debugging for the Steam version go into the properties for Bitburner (little cogwheel to the right when viewing Bitburner in your library) and add the following launch option `--remote-debugging-port=9222`.
+
+### Chrome/Chromium
+
+To enable remote debugging for your browser you need to launch it over the commandline like so:
+
+```sh
+<path-to-chrome> --remote-debugging-port=9222
+```

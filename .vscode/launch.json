@@ -1,11 +1,19 @@
 {
   "version": "0.2.0",
   "configurations": [
-      {
-          "type": "chrome",
-          "request": "attach",
-          "name": "Attach to BitBurner",
-          "port": 9222,
-      }
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to BitBurner (Steam)",
+      "port": 9222,
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to BitBurner (Web)",
+      "port": 9222,
+      "urlFilter": "https://bitburner-official.github.io/*",
+      "webRoot": "${workspaceFolder}"
+    }
   ]
 }
