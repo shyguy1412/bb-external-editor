@@ -4,6 +4,8 @@ This is a template for using any external editor for Bitburner. This Template su
 
 ## How to get started
 
+### Cloning this Repo
+
 1. If you dont already have it installed, install [NodeJS](https://nodejs.org) v20 or newer
 1. Clone this repository
 1. navigate to the template (`cd path/to/the/template`) inside your console
@@ -12,6 +14,20 @@ This is a template for using any external editor for Bitburner. This Template su
 1. open Bitburner and navigate to the settings
 1. open the tab labeled 'Remote API' and enter the port '12525'
 1. press connect
+
+### Docker
+
+1. Pull the image `docker pull shyguy1412/bb-external-editor:latest`
+1. Create a folder for your scripts `mkdir scripts`
+1. Create the container `docker create --name bb-external-editor -p 12525:12525 -v ./scripts:/bb-external-editor/servers shyguy1412/b
+b-external-editor:latest`
+1. Start the container `docker start bb-external-editor`
+
+## File Hierarchy
+
+The destination server of your scripts is determined by their file hierarchy. The file hierarchy consists of a basepath (default `/servers`), a server name and the script path.  
+This means a file with the path `servers/home/lib/utils.ts` will be placed on the home server, in the lib folder as utils.js while a file with the path `servers/pserv-1/hack.ts` would be placed on pserv-1 as `hack.js`.  
+If a server does not exist a warning will be printed to the console.
 
 Now any changes made to scripts inside the server folders will automatically be uploaded to Bitburner.
 
