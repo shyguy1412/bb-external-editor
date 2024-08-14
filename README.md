@@ -7,8 +7,8 @@ This is a template for using any external editor for Bitburner. This Template su
 ### Cloning this Repo
 
 1. If you dont already have it installed, install [NodeJS](https://nodejs.org) v20 or newer
-1. Clone this repository
-1. navigate to the template (`cd path/to/the/template`) inside your console
+1. Clone this repository `git clone https://github.com/shyguy1412/bb-external-editor`
+1. navigate to the template inside your console `cd bb-external-editor`
 1. run `npm install` in your console to install all dependencies
 1. run `npm start` in your console to start the RemoteAPI server
 1. open Bitburner and navigate to the settings
