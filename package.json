@@ -4,7 +4,7 @@
   "description": "template for external editors for the game bitburner",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build.mjs"
+    "start": "node ./config.mjs"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/shyguy1412/bb-external-editor#readme",
   "dependencies": {
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
-    "esbuild": "^0.23.0",
-    "esbuild-bitburner-plugin": "^1.6.0"
+    "esbuild": "^0.23.1",
+    "esbuild-bitburner-plugin": "^1.6.1"
   }
 }
