@@ -19,8 +19,7 @@ This is a template for using any external editor for Bitburner. This Template su
 
 1. Pull the image `docker pull shyguy1412/bb-external-editor:latest`
 1. Create a folder for your scripts `mkdir scripts`
-1. Create the container `docker create --name bb-external-editor -p 12525:12525 -v ./scripts:/bb-external-editor/servers shyguy1412/b
-b-external-editor:latest`
+1. Create the container `docker create --name bb-external-editor -p 12525:12525 -v ./scripts:/bb-external-editor/servers shyguy1412/bb-external-editor:latest`
 1. Start the container `docker start bb-external-editor`
 
 ## File Hierarchy
