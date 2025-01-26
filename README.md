@@ -2,7 +2,7 @@
 
 This is a template for using any external editor for Bitburner. This Template supports JS, JSX, TS and TSX out of the box.
 
-## How to get started
+## How to get started (choose one method)
 
 ### Cloning this Repo
 
