@@ -10,7 +10,7 @@ This is a template for using any external editor for Bitburner. This Template su
 1. Clone this repository `git clone https://github.com/shyguy1412/bb-external-editor`
 1. navigate to the template inside your console `cd bb-external-editor`
 1. run `npm install` in your console to install all dependencies
-  - this template is not always up to date with the actual tool. To make sure you get the newest release run `npm install esbuild-bitburner-plugin@latest`
+   - this template is not always up to date with the actual tool. To make sure you get the newest release run `npm install esbuild-bitburner-plugin@latest`
 1. run `npm start` in your console to start the RemoteAPI server
 1. open Bitburner and navigate to the settings
 1. open the tab labeled 'Remote API' and enter the port '12525'
