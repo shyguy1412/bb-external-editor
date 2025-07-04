@@ -10,18 +10,11 @@ This is a template for using any external editor for Bitburner. This Template su
 1. Clone this repository `git clone https://github.com/shyguy1412/bb-external-editor`
 1. navigate to the template inside your console `cd bb-external-editor`
 1. run `npm install` in your console to install all dependencies
+  - this template is not always up to date with the actual tool. To make sure you get the newest release run `npm install esbuild-bitburner-plugin@latest`
 1. run `npm start` in your console to start the RemoteAPI server
 1. open Bitburner and navigate to the settings
 1. open the tab labeled 'Remote API' and enter the port '12525'
 1. press connect
-
-### Docker
-
-1. Pull the image `docker pull shyguy1412/bb-external-editor:latest`
-1. Create a folder for your scripts `mkdir scripts`
-1. Create the container `docker create --name bb-external-editor -p 12525:12525 -v ./scripts:/bb-external-editor/servers shyguy1412/bb-external-editor:latest`
-1. Start the container `docker start bb-external-editor`
-
 ## File Hierarchy
 
 The destination server of your scripts is determined by their file hierarchy. The file hierarchy consists of a basepath (default `/servers`), a server name and the script path.  
